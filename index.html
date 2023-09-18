@@ -1,0 +1,397 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = '{ static 'css/cv_style_sheet.css' %}'>
+    <title>cv</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f1f1f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid  #81a6e4;
+            background-color: #3c4043;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-top: 15px;
+        }
+        .section {
+            margin-top: 10px;
+        }
+        .section h3 {
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color:  #81a6e4;
+            text-decoration: none;
+        }
+        .bio {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .education, .experience {
+            margin-top: 15px;
+        }
+        .education h3, .experience h3 {
+            margin-bottom: 5px;
+        }
+        .cv-photo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cv-photo img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        h2 {
+        font-weight: bold;
+        text-decoration: underline;
+        }
+        h3 {
+        text-decoration: underline;
+        }
+        #top {
+            height: 1px;
+            margin-top: -1px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Curriculum Vitae of Jacolien Wilson</h1>
+        <div class="cv-photo">
+            <img src="{% static 'images/cv_photo.jpg' %}">
+            <hr style="border-color: #81a6e4;">
+        </div>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:jackywilson606@gmail.com">jackywilson606@gmail.com</a></p>
+            <p><strong>Contact Number:</strong> +27 62 532 3041</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jacolien-wilson-976488248">Jacolien Wilson</a></p>
+            <p><strong>Address:</strong><br>
+               904 Metropolis Apartments,<br>
+               32, Prestwich Street,<br>
+               De Waterkant,<br>
+               Cape Town,<br>
+               South Africa,<br>
+               8001</p>
+        </div>
+
+        <div class="bio">
+            <p>With a passion for organization and efficiency, along with a background in offering comprehensive administrative and personal support, I'm truly excited about the potential to contribute positively to your team.</p>
+            <p>In pursuit of my dream of studying software engineering, I recently took the step to leave my role as an executive personal assistant and reservations manager. My responsibilities included skillfully managing calendars and schedules. I find joy in bustling environments where my knack for time management and organization shines. Aiding this is my exceptional ability to communicate and multitask, making me adept at both administrative tasks and staff management. This combination of skills has consistently led to heightened productivity and success within the businesses I've been a part of.</p>
+            <p>My unwavering dedication to delivering top-notch productivity positions me perfectly to continue providing exceptional service within your organization. I'm genuinely enthusiastic about the chance to chat more about potential positions and how my qualifications align with your needs. Let's have a conversation soon!</p>
+        </div>
+
+        <div class="education">
+        <hr style="border-color: #81a6e4;">
+            <h2>Education</h2>
+                <h3>High School</h3>
+                <p>Completed Grade 12 in 2003</p>
+                <p>In 1999 and 2000 I spent my weekends and holidays working at the Medical Research Council from 08:00 to 17:00 and at a veterinary clinic in Bludowns FROM 19:00 to 21:00 as an ad-hoc assistant.</p>
+        </div>
+
+        <div class="education">
+            <h2>Tertiary Education</h2>
+            <h3>Unisa:</h3>
+               In 2004 I studied only my first year in a Bachelor of Laws (LLB) but did not attend the final examinations.</p>
+        </div>
+
+        <div class="education">
+            <h3>Carlton Hair International Academy</h3>
+                <p>At the end of 2004, I was accepted to work and study with Carlton Hair International.</p>
+                <p>I received my Trade certificate in 2009 and continued to further my education by attending numerous courses, including hair-cutting and colouring techniques.</p>
+                <p>I had also taken part in provincial competitions and managed to place third.</p>
+                <p>In my time with Carlton Hair, I was promoted to be the in-house hair-cutting and colour trainer for our new intake of students.</p>
+        </div>
+
+        <div class="education">
+            <h3>EPT Aviation Training</h3>
+                <p>I started studying for my Cabin Crew License in 2015, which included the following subjects as well as practical examinations:</p>
+                    <ul>
+                        <li>Safety and Emergency Procedures Training</li>
+                        <li>Aircraft Type – Boeing 737 - 200</li>
+                        <li>Dangerous Goods</li>
+                        <li>Security</li>
+                        <li>Firefighting</li>
+                        <li>Crew Resource Management</li>
+                        <li>Grooming</li>
+                        <li>Preparation for the Workplace</li>
+                        <li>AVMED</li>
+                    </ul>
+                <p>At the end of the course, I wrote a final examination at the Civil Aviation Authority and received full marks.</p>
+        </div>
+
+        <div class="education">
+            <h3>UCT and GetSmarter</h3>
+                <p>At the end of 2016, I studied an online Events management course and completed the following subjects with a final grade of 82%:</p>
+                    <ul>
+                        <li>Event role players</li>
+                        <li>Bidding and securing an event</li>
+                        <li>Event organisation and project management</li>
+                        <li>Event operations and logistics</li>
+                        <li>Event design and décor</li>
+                        <li>Financial management</li>
+                        <li>Event marketing and sponsorship</li>
+                        <li>Risk management</li>
+                        <li>Sustainable events and event greening</li>
+                    </ul>
+        </div>
+
+        <div class="education">
+            <h3>Outsourced Learner Management (OLM) and Forensics4Africa</h3>
+                <p>Forensic Biology</p>
+                <p>In July of 2021, I started studying toward my National Certificate in Forensic Science with Forensic Biology as my elective. This qualification is temporarily on hold as I have changed my elective to Fraud Examination with the following subjects:</p>
+                <p><strong>Knowledge Component:</strong></p>
+                    <ul>
+                        <li>Fraud Prevention and Deterrence</li>
+                        <li>Law and Legal Fraud Principles</li>
+                        <li>Fraud Investigation Techniques</li>
+                        <li>Financial transactions and fraud schemes</li>
+                    </ul>
+                <p><strong>Practical Component:</strong></p>
+                    <ul>
+                        <li>Establish an anti-fraud culture in an organisation</li>
+                        <li>Investigate financial statement fraud</li>
+                        <li>Investigate Asset Misappropriations Fraud Schemes</li>
+                        <li>Investigate Corruption</li>
+                        <li>Investigate Industry Specific Fraud Schemes</li>
+                        <li>Apply Fraud Investigation Techniques</li>
+                    </ul>
+                <p><strong>Workplace Component:</strong></p>
+                    <ul>
+                        <li>Develop a Fraud Risk Management Programme</li>
+                        <li>Conduct Fraud Investigations</li>
+                    </ul>
+                <p>This will be completed when I resume my studies, but the date is unknown at this stage.</p>
+        </div>
+
+        <div class="education">
+            <h3>CodeAcademy</h3>
+                <p>On 3 August 2022, I completed a course in Python with the following subjects:</p>
+                    <ul>
+                        <li>Hello World</li>
+                        <li>Control Flow</li>
+                        <li>Lists</li>
+                        <li>Loops</li>
+                        <li>Functions</li>
+                        <li>Strings</li>
+                        <li>Modules</li>
+                        <li>Dictionaries</li>
+                        <li>Files</li>
+                        <li>Classes</li>
+                    </ul>
+                <p>After this, I have dabbled in React as well as JavaScript, but I have not completed these short courses.</p>
+        </div>
+
+        <div class="education">
+            <h3>Harvard University Online CS-50: Introduction to Computer Science</h3>
+                <p>In February 2023, I started with the CS-50 course which is hosted online and covers various different topics as well as languages. This is a self-paced course and can be completed when the student is ready.</p>
+        </div>
+
+        <div class="education">
+            <h3>HyperionDev</h3>
+                <p>Software Engineering</p>
+                    <p>In April of 2023, I signed up and started studying the Software Engineering Bootcamp which I am currently still in the midst of completing. I will, however, have this completed by the 6th of October 2023.</p>
+                 <hr style="border-color: #81a6e4;">
+        </div>
+
+        <div class="experience">
+            <h2>Work Experience</h2>
+            <h3>Medical Research Council and Bluedowns Veterinary Clinic</h3>
+                <p>In 1999 and 2000, I spent my weekends and holidays working at the Medical Research Council from 08:00 to 17:00 and at a veterinary clinic in Bluedowns from 19:00 to 21:00 as an ad-hoc assistant.</p>
+                <p>My duties ranged from feeding the animals on both sites to cleaning cages, engaging with clients as well as overseeing the general welfare of the animals held at the Medical Research Council.</p>
+                <p>At the veterinary clinic in Bluedowns, I assisted in medical procedures in an effort to gain knowledge. As it was after hours, I would attend to reception duties which included attending to the switchboard, phoning clients with regards to their pets, and offering alternatives after first consulting with the veterinarian.</p>
+        </div>
+
+        <div class="experience">
+            <h3>Carlton Hair International</h3>
+                <p>Apprentice</p>
+                <p>Period: 2004 to 2006</p>
+        </div>
+
+        <div class="experience">
+            <h3>Carlton Hair International</h3>
+                <p>Stylist and in-house trainer</p>
+                <p>Period: 2006 to 2010</p>
+        </div>
+
+        <div class="experience">
+            <h3>Self Employed</h3>
+                <p>Home-based salon</p>
+                <p>Period: October 2010 to August 2014</p>
+        </div>
+
+        <div class="experience">
+            <h3>International Academy of Health and Skincare</h3>
+                <p>Hairdressing lecturer, Assessor, and Salon Manager</p>
+                <p>Period: August 2014 to 30 October 2015</p>
+                <p><strong>Primary Roles and Responsibilities:</strong></p>
+                    <ul>
+                        <li>Filing</li>
+                        <li>Preparing lessons</li>
+                        <li>Delivering lessons</li>
+                        <li>Operating of phones</li>
+                        <li>Salon management</li>
+                        <li>Assessing assignments and practical assessments</li>
+                        <li>Customer relations</li>
+                    </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Monkey Valley Resort</h3>
+                <p>Marketing Manager</p>
+                <p>Period: February 2017 to 2020</p>
+                <p><strong>Primary Roles and Responsibilities:</strong></p>
+                    <ul>
+                        <li>Client Relations</li>
+                        <li>Updating all social media platforms</li>
+                        <li>Offsite meetings with clients</li>
+                        <li>Setting up and delivering site inspections</li>
+                        <li>General advertising of the resort</li>
+                        <li>Designing of adverts</li>
+                    </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Megasolar SA (a division of Monkey Valley Resort)</h3>
+                <p>Office Administrator and Dispatch Coordinator</p>
+                <p><strong>Primary Roles and Responsibilities:</strong></p>
+                    <ul>
+                        <li>Client Relations</li>
+                        <li>Keeping track of sales made through the website</li>
+                        <li>Ordering of equipment from suppliers</li>
+                        <li>Ensuring communication is maintained with all clients regarding purchases and delivery timelines</li>
+                        <li>Arranging all collections and deliveries of orders are completed timeously</li>
+                        <li>Procuring new suppliers</li>
+                        <li>Setting up and keeping track of appointments with clients</li>
+                        <li>Arranging installers for clients</li>
+                        <li>Quoting and invoicing</li>
+                        <li>Designing of adverts</li>
+                    </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Monkey Valley Resort</h3>
+                <p>Conference Manager and Coordinator</p>
+                <p><strong>Primary Roles and Responsibilities:</strong></p>
+                    <ul>
+                        <li>Oversee meeting booking, cancellation, and postponement orders from clients</li>
+                        <li>Plan and coordinate all activities to successfully execute meetings and conferences</li>
+                        <li>Obtain meeting request orders, book meeting rooms and send confirmations to clients</li>
+                        <li>Determine participant counts and accordingly book the correct size meeting room</li>
+                        <li>Process all other additional requests such as room set-up, catering needs, and audio-visual device requirements</li>
+                        <li>Maintain a high level of professionalism and competence when dealing with clients</li>
+                        <li>Obtain client feedback and make appropriate changes for improvements</li>
+                        <li>Submit invoices for catering, equipment, and other amenities to clients</li>
+                        <li>Resolve booking conflicts in a timely and accurate fashion</li>
+                        <li>Ensure that meeting rooms are set up with requested amenities and AV equipment</li>
+                        <li>Greet the participants and direct them to the meeting room</li>
+                        <li>Address new requests of the host before and during meetings</li>
+                        <li>Respond to client calls and e-mails related to meeting set-up</li>
+                        <li>Perform regular inspections of the meeting facility to ensure lighting and AV equipment and other amenities work properly</li>
+                    </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Cape Point Vineyards</h3>
+                <p>Personal Assistant & Bookings and Sales Manager</p>
+                <p>Period: November 2020 to October 2022</p>
+                <p><strong>Basic Roles and Responsibilities:</strong></p>
+                <p>P.A to the Director of Cape Point Vineyards -</p>
+                    <ul>
+                        <li>Scheduling meetings with investors as well as taking meeting minutes</li>
+                        <li>Scheduling flights, accommodation, and transport</li>
+                        <li>Designing and modifying company organograms</li>
+                        <li>Liaising with business partners ensuring all necessary documents are sent and received</li>
+                        <li>Attend to any Ad-Hoc requests</li>
+                    </ul>
+                <p>Bookings and sales agent for Nzuwizi River Safari Lodge (a division of Cape Point Vineyards):</p>
+                    <ul>
+                        <li>Liaise with guests and tour operators regarding the large booking requests</li>
+                        <li>Arrange site inspections for tour operators at the lodge</li>
+                        <li>Advertise and promote the guest lodge by partnering with external companies</li>
+                        <li>Oversee bookings, cancellations, and postponement orders from clients</li>
+                        <li>Updating prices and specials on booking.com as well as Nightsbridge</li>
+                        <li>Arrange and coordinate all activities to successfully execute guest visits</li>
+                        <li>Obtain visit request orders, book rooms and send confirmations to clients</li>
+                        <li>Determine visitor counts and accordingly book the correct sized rooms</li>
+                        <li>Process all other additional requests such as room set-up and catering needs</li>
+                        <li>Maintain a high level of professionalism and competence when dealing with clients</li>
+                        <li>Obtain client feedback and make appropriate changes for improvements</li>
+                        <li>Submit invoices for catering, equipment, and other amenities to clients</li>
+                        <li>Follow up on unpaid invoices and unanswered quotes</li>
+                        <li>Resolve booking conflicts in a timely and accurate fashion</li>
+                        <li>Ensure that rooms are set up with the requested amenities</li>
+                        <li>Ensure guest lodge managers greet guests at the airport and transfer them to the lodge</li>
+                        <li>Respond to client calls and e-mails related to accommodation or functions</li>
+                    </ul>
+                <p>Bookings manager and receptionist for Cape Point Vineyards Restaurant and Head Office:</p>
+                    <ul>
+                        <li>Attending to the switchboard phone and directing calls to the relevant departments</li>
+                        <li>Respond to client calls and e-mails related to bookings at the restaurant</li>
+                        <li>Ensure bookings, cancellations, and postponement orders from clients are fulfilled and entered into Dineplan</li>
+                        <li>Obtain booking request orders and send confirmations to clients</li>
+                        <li>Determine visitor counts and accordingly book the correct area of the Vineyards Estate</li>
+                        <li>Process all other additional requests such as room set-up and catering needs</li>
+                        <li>Arrange external catering if needed</li>
+                        <li>Maintain a high level of professionalism and competence when dealing with clients</li>
+                        <li>Obtain client feedback and make appropriate changes for improvements</li>
+                        <li>Submit invoices for catering, equipment, and other amenities to clients</li>
+                        <li>Follow up on unpaid invoices and unanswered quotes</li>
+                        <li>Resolve booking conflicts in a timely and accurate fashion</li>
+                        <li>Arrange site inspections for guests and show them around the estate</li>
+                        <li>Greet the guests and direct them to their host for the day</li>
+                        <li>Address new requests of guests before their visit</li>
+                        <li>Manage gardeners to ensure all public areas and gardens are maintained</li>
+                        <li>Arrange external maintenance companies when needed and ensure the tasks are properly executed</li>
+                        <li>Any Ad-Hoc duties required</li>
+                    </ul>
+                <p>Web-sales agent for Cape Town Wine Co. (A division of Cape Point Vineyards):</p>
+                    <ul>
+                        <li>Client Relations</li>
+                        <li>Keeping track of sales made through the website</li>
+                        <li>Updating the front and back end of the WordPress website</li>
+                        <li>Ensuring communication is maintained with all clients regarding purchases and delivery timelines</li>
+                        <li>Arranging all collections and deliveries of orders are completed timeously</li>
+                        <li>Quoting and invoicing should clients require larger volumes of stock</li>
+                        <li>Any Ad-Hoc duties required</li>
+                    </ul>
+        </div>
+        <div class="bottom-section">
+            <hr style="border-color: #81a6e4;">
+            <h3>Past projects:</h3>
+                <p>In the past, I have done some minor projects in both Python and C coding languages, as well as creating a small game using Scratch. <br> Please find my Github Repositories as well as my Scratch game below: <br>
+                    <ul>
+                        <li> <a href = "https://github.com/Jinx606/Starting-off-in-Python.git" style="color: #81a6e4;" > Python Repository </a> </li>
+                    <li> <a href = "https://github.com/Jinx606/coding-in-c.git" style="color: #81a6e4;"> C Repository </a> </li>
+                    <li> <a href = "https://scratch.mit.edu/projects/822444699" style="color: #81a6e4;" > Scratch Game </a> </li>
+                    </ul>
+                </p>
+
+            <h3>Articles:</h3>
+                <p>Unfortunately to date, I have not written nor published any articles or blogs, therefore it is not a possibility for me to add any links related to such.</p>
+
+            <br><a href="#top" style="color: #81a6e4;">Back to Top</a>
+        </div>
+
+</body>
+</html>
